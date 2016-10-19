@@ -1,8 +1,14 @@
+
 /**
+ * Copyright (c) 2016. Fábrica de Software - Instituto de Informática (UFG)
+ * Creative Commons Attribution 4.0 International License.
+ */
+ 
+package com.github.mvaof.aula02;
+ /**
  * Implementação do cálculo de potência através de produto.
  * @author Marcus
  */
-package com.github.mvaof.aula02;
 
 public class Potências {
 /**
@@ -16,7 +22,7 @@ public class Potências {
 
 		int potencia = 1;
 
-		if (x <= 0 && y <= 0) {
+		if (x < 0 || y < 0) {
 			throw new IllegalArgumentException("Não é permitido número negativo!");
 		}
 		int i = 1;

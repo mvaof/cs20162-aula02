@@ -16,7 +16,7 @@ public class SomaTest {
 		assertEquals(3, Soma.somaNaturais(2));
 	}
 	@Test
-    public void apenasParaAgradarJacocoTool100PorCentoCobertura() {
+    public void testInstanciar() {
         new Soma();
     }
 }

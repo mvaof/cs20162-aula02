@@ -17,9 +17,10 @@ public class Propriedade153Test {
 	@Test
 	public void testTrivial(){
 		assertEquals(true, Propriedade153.propriedade(153));
+		assertEquals(false, Propriedade153.propriedade(150));
 	}
 	@Test
-    public void apenasParaAgradarJacocoTool100PorCentoCobertura() {
+    public void testInstanciar() {
         new Propriedade153();
     }
 

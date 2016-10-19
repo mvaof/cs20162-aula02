@@ -2,6 +2,7 @@ package com.github.mvaof.aula02;
 
 import static org.junit.Assert.*;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class ProdutoTest {
@@ -15,7 +16,14 @@ public class ProdutoTest {
 		assertEquals(4, Produto.produto(2, 2) );
 	}
 	@Test
-    public void apenasParaAgradarJacocoTool100PorCentoCobertura() {
+    public void testCasosDeFronteira() {
+        Assert.assertEquals(0, Produto.produto(0, 1));
+        Assert.assertEquals(0, Produto.produto(1, 0));
+        Assert.assertEquals(10, Produto.produto(1, 10));
+        Assert.assertEquals(10, Produto.produto(10, 1));
+}
+	@Test
+    public void testInstanciar() {
         new Produto();
     }
 
